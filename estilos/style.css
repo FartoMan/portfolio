@@ -107,13 +107,13 @@ section#logo-cgr {
     display: none;
 }
 
-#estudos-content, #projetos-content {
+#estudos-content, #projetos-content, #contatos-content {
     width: 80%;
     margin: auto;
     display: inline-flex;
 }
 
-#estudos-content a, #projetos-content a {
+#estudos-content a, #projetos-content a, #contatos-content a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -121,7 +121,7 @@ section#logo-cgr {
     margin: auto;
 }
 
-.estudoNome, .projetoNome {
+.estudoNome, .projetoNome, .contatoNome {
     min-width: 150px;
     min-height: 150px;
     background-color: var(--cor4);
@@ -132,7 +132,16 @@ section#logo-cgr {
     position: relative;
 }
 
-.estudoNome > img, .projetoNome > img{
+.contatoNome {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.contatoNome img {
+    width: 150px;
+}
+
+.estudoNome > img, .projetoNome > img {
     position: absolute;
     top: 50%;
     left: 50%;
