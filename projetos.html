@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        #projetos {
+            display: flex;
+            height: 100%;
+            overflow-y: hidden;
+            scrollbar-width: none;
+        }
+        #projetos::-webkit-scrollbar {
+            width: 5px;
+        }
+        #projetos::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.116);
+        }
+        #projetos::-webkit-scrollbar-thumb {
+            background-color: blue;
+            border-radius: 5px;
+            border: 2px solid red;
+        }
+
+        .projeto {
+            margin: 0 11%;
+        }
+        .img {
+            width: 350px;
+            height: 100%;
+            background-color: black;
+        }
+        .pj1 {
+            background-color: #151;
+        }
+        .pj2 {
+            background-color: #15f;
+        }
+        .pj3 {
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <div id="projetos">
+        <div class="projeto">
+            <a href="#">
+                <div class="img pj1">
+                    projeto
+                </div>
+            </a>
+        </div>
+        <div class="projeto">
+            <a href="">
+                <div class="img pj2">
+                    projeto
+                </div>
+            </a>
+        </div>
+        <div class="projeto">
+            <a href="">
+                <div class="img pj3">
+                    projeto
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
