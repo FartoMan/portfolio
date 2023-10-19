@@ -2,158 +2,31 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio CharleyGraphia</title>
+    <title>Portfólio do Charley</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="imagens/cgr-100.png" type="image/x-icon">
 </head>
-
 <body>
-    <h1>CharleyGraphia</h1>
-    <section id="logo-cgr" class="centro">
-        <img src="imagens/cgr-full.png" alt="CharleyGraphia Logo">
-    </section>
-    <section id="sobre" class="centro">
-        <h2>Olá! Me chamo Charley. É um prazer tê-lo aqui!</h2>
-        <p>Sou desenvolvedor há menos de um ano. Ainda estou construindo minha carreira, mas, nesse tempo, me encontrei melhor no que diz respeito ao Front-End, pois já trabalhava com formatação de textos e tratamento de imagens, como fotógrafo. Pensando no meu aprimoramento, comecei a cursar Análise e Desenvolvimento de Software, abrangindo mais os meus horizontes.</p>
-    </section>
-    <section id="estudos" class="centro">
-        <h2>Estudos</h2>
-        <p>Estudo seguindo alguns cursos online, como o Curso em Vídeo, com o professor Gustavo Guanabara, e seguindo alguns tutoriais da W3School, no caso o JavaScript. Na linguagem C, ainda não há exercícios para visualizar.</p>
-        <div id="estudos-content">
-            <a href="https://fartoman.github.io/Html-css/Desafios/index.html" target="_blank">
-                <div class="estudoNome">
-                    <img class="html-img" src="imagens/logo-html5-100.png" alt="HTML5">
-                    <img class="css-img" src="imagens/logo-css-100.png" alt="CSS3">
-                    <p>HTML5<br>CSS3</p>
-                </div>
-            </a>
-            <a href="https://fartoman.github.io/javascript/header.html" target="_blank">
-                <div class="estudoNome">
-                    <img class="js-img" src="imagens/logo-js-200.png" alt="JavaScript Logo">
-                    <p>Java<br> Script</p>
-                </div>
-            </a>
-            <a href="#">
-                <div class="estudoNome">
-                    <img class="c-img" src="imagens/logo-c-200.png" alt="Linguagem C">
-                    <p>C</p>
-                </div>
-            </a>
+    <header>
+        <h1>Charley Worrison</h1>
+        <menu>
+            <ul>
+                <li>Projetos</li>
+                <li>Contatos</li>
+                <li>Sobre mim</li>
+            </ul>
+        </menu>
+    </header>
+    <main id="projetos">
+        <div id="projeto">
+            projeto
         </div>
-    </section>
-    <section id="projetos" class="centro">
-        <h2>Projetos</h2>
-        <p>Três projetos desenvolvidos, até o momento, explorando um pouco do que aprendi. O primeiro é uma coletânea de poesias minha; o segundo, um site para a apresentação de uma banda de blues, de amigos; o terceiro, foi o primeiro projeto feito seguindo o Curso em Vídeo.</p>
-        <div id="projetos-content">
-            <a href="https://fartoman.github.io/projeto-poesias/" target="_blank">
-                <div class="projetoNome">
-                    <p>Poesias</p>
-                </div>
-            </a>
-            <a href="https://fartoman.github.io/oh-trem-blues/" target="_blank">
-                <div class="projetoNome">
-                    <p>Sites</p>
-                </div>
-            </a>
-            <a href="https://fartoman.github.io/projeto-cordel/" target="_blank">
-                <div class="projetoNome">
-                    <p>Cordel</p>
-                </div>
-            </a>
+        <div id="projeto">
+            projeto
         </div>
-    </section>
-    <section id="contato" class="centro">
-        <h2>Contato</h2>
-        <div id="contatos-content">
-            <div class="contatoNome" >
-                <a href="https://github.com/FartoMan" target="_blank">
-                    <img src="imagens/git-icon.png" alt="GitHub Icon">
-                </a>
-            </div>
-            <div class="contatoNome" >
-                <a href="https://www.linkedin.com/in/charley-worrison/" target="_blank">
-                    <img src="imagens/linkedin-icon.png" alt="LinkedIn Icon">
-                </a>
-            </div>
-            <div class="contatoNome" >
-                <a href="https://www.instagram.com/charleygraphia/" target="_blank">
-                    <img src="imagens/instagram-icon.png" alt="Instagram Icon">
-                </a>
-            </div>
-
+        <div id="projeto">
+            projeto
         </div>
-    </section>
-
-    <main>
-        <header>
-            <h2>Desenvolvedor Web | HTML5 | CSS3 | JavaScript</h2>
-            <nav>
-                <ul>
-                    <li><a href="#" onclick="displaySobre();">Sobre</a></li>
-                    <li><a href="#" onclick="displayEstudos()">Estudos</a></li>
-                    <li><a href="#" onclick="displayProjetos()">Projetos</a></li>
-                    <li><a href="#" onclick="displayContato()">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
     </main>
-
-    <script>
-        var exibindo = 0;
-        function displaySobre() {
-            if(exibindo == 1){
-                document.getElementById('sobre').style.display = "none";
-                exibindo = 0;
-            }
-            else {
-                document.getElementById('sobre').style.display = "block";
-                document.getElementById('estudos').style.display = "none";
-                document.getElementById('projetos').style.display = "none";
-                document.getElementById('contato').style.display = "none";
-                exibindo = 1;
-            }
-        }
-        function displayEstudos() {
-            if(exibindo == 2) {
-                document.getElementById('estudos').style.display = "none";
-                exibindo = 0;
-            }
-            else {
-                document.getElementById('sobre').style.display = "none";
-                document.getElementById('estudos').style.display = "block";
-                document.getElementById('projetos').style.display = "none";
-                document.getElementById('contato').style.display = "none";
-                exibindo = 2;
-            }
-        }
-        function displayProjetos() {
-            if(exibindo == 3) {
-                document.getElementById('projetos').style.display = "none";
-                exibindo = 0;
-            }
-            else {
-                document.getElementById('sobre').style.display = "none";
-                document.getElementById('estudos').style.display = "none";
-                document.getElementById('projetos').style.display = "block";
-                document.getElementById('contato').style.display = "none";
-                exibindo = 3;
-            }
-        }
-        function displayContato() {
-            if(exibindo == 4) {
-                document.getElementById('contato').style.display = "none";
-                exibindo = 0;
-            }
-            else {
-                document.getElementById('sobre').style.display = "none";
-                document.getElementById('estudos').style.display = "none";
-                document.getElementById('projetos').style.display = "none";
-                document.getElementById('contato').style.display = "block";
-                exibindo = 4;
-            }
-        }
-    </script>
 </body>
 </html>
