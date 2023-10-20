@@ -19,7 +19,7 @@
             position: absolute;
             display: flex;
             height: 95%;
-            width: 300%;
+            width: 500%;
             top: 50%;
             transform: translateY(-50%);
         }
@@ -41,6 +41,7 @@
         }
 
         .projeto {
+            position: relative;
             margin: 10px 20px;
             width: 100%;
             height: 96%;
@@ -48,20 +49,38 @@
             border-radius: 20px;
         }
         .img {
+            position: absolute;
             height: 100%;
             width: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             border-radius: 20px;
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img:hover {
+            height: 100%;
+            width: 100%;
         }
         .pj1 {
             background-image: url(imagens/projeto-tlg-cel.png);
         }
         .pj2 {
-            background-color: #15f;
+            background-image: url(imagens/projeto-rs.jpg);
         }
         .pj3 {
-            background-color: beige;
+            background-image: url(imagens/projeto-poesias.jpg);
         }
+        .pj4 {
+            background-image: url(imagens/projeto-cordel.jpg);
+        }
+        .pj5 {
+            background-image: url(imagens/projeto-cads.jpg);
+        }
+
+
     </style>
 </head>
 <body>
@@ -69,21 +88,35 @@
         <div class="projeto">
             <a href="https://fartoman.github.io/projeto-telalogin/" target="_blank">
                 <div class="img pj1">
-                    projeto
+
                 </div>
             </a>
         </div>
         <div class="projeto">
-            <a href="">
+            <a href="https://fartoman.github.io/projeto-redesocial/" target="_blank">
                 <div class="img pj2">
-                    projeto
+                    
                 </div>
             </a>
         </div>
         <div class="projeto">
-            <a href="">
+            <a href="https://fartoman.github.io/projeto-poesias/" target="_blank">
                 <div class="img pj3">
-                    projeto
+                    
+                </div>
+            </a>
+        </div>
+        <div class="projeto">
+            <a href="https://fartoman.github.io/projeto-cordel/" target="_blank">
+                <div class="img pj4">
+                    
+                </div>
+            </a>
+        </div>
+        <div class="projeto">
+            <a href="https://fartoman.github.io/card-pop-up/#" target="_blank">
+                <div class="img pj5">
+                    
                 </div>
             </a>
         </div>
