@@ -13,10 +13,12 @@
         body {
             height: 100vh;
             width: 100vw;
+            scrollbar-width: none;
         }
         #projetos {
             display: flex;
             height: 100%;
+            width: 300%;
             overflow-y: hidden;
             scrollbar-width: none;
         }
@@ -27,21 +29,25 @@
             background: rgba(255, 255, 255, 0.116);
         }
         #projetos::-webkit-scrollbar-thumb {
-            background-color: blue;
+            background-color: rgba(0, 0, 255, 0.356);
             border-radius: 5px;
-            border: 2px solid red;
+            border: 1px solid rgba(255, 0, 0, 0.342);
+        }
+        #projetos::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(0, 0, 255, 0.56);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 0, 0, 0.42);
         }
 
         .projeto {
-            margin: 0 11%;
-        }
-        .img {
-            width: 80vw;
-            height: 100%;
-            background-color: black;
+            margin: 5px 11%;
+            width: 90%;
+            height: 96%;
+            box-shadow: 0 0 10px black;
+            border-radius: 20px;
         }
         .pj1 {
-            background-color: #151;
+            background-image: url(imagens/projeto-tlg-cel.png);
         }
         .pj2 {
             background-color: #15f;
@@ -54,7 +60,7 @@
 <body>
     <div id="projetos">
         <div class="projeto">
-            <a href="#">
+            <a href="https://fartoman.github.io/projeto-telalogin/">
                 <div class="img pj1">
                     projeto
                 </div>
